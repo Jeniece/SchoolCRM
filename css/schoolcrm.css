@@ -1,0 +1,381 @@
+/*
+Global
+*/
+
+body{
+  min-height: 100vh;
+}
+
+body *{
+  box-sizing: border-box;
+}
+
+/*
+Header
+*/
+#headerContainer{
+  height: 48px;
+  background-color: #C63D0F;
+  color: white;
+  padding: 12px 24px;
+  /*border: 1px solid red;*/
+}
+
+#headerLogo{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-option{
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-option a:hover{
+  color: #3b3738;
+  cursor: pointer;
+}
+
+.nav-option a{
+  color: white;
+  text-decoration: none;
+}
+/*
+Footer
+*/
+#footerContainer{
+  height: 60px;
+  background-color: #3B3738;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*
+Login
+*/
+#loginContainer{
+  /*border: 1px solid yellow;*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#loginFormContainer, #registerFormContainer{
+    width: 440px;
+    border: 4px solid #C63D0F;
+    margin: auto;
+    margin-top: 60px;
+    padding: 24px;
+    background-color: #FDF3E7;
+    /*height: 200px;*/
+}
+
+.loginForm, #loginAlert {
+  min-width: 440px;
+}
+
+#loginBtn{
+  width: 100%;
+  background-color: #C63D0F;
+  font-size: 16px;
+  color: white;
+}
+
+#logoutBtn{
+  cursor: pointer;
+}
+
+#forgotPass {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*
+Register
+*/
+#registerContainer {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerForm {
+  min-width: 340px;
+}
+
+#registerBtn{
+  display: flex;
+  /*border: 1px solid black;*/
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#registerBtn button{
+  width: 100px;
+}
+/*
+Activate
+*/
+
+.registrationForm{
+  width: 960px;
+  margin: 66px auto;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 5px;
+  /*border: 1px solid black;*/
+  /*background-color: white;*/
+}
+
+.container1{
+  border: 1px solid black;
+}
+
+
+#parentBasicInfo label {
+  width: 95px;
+}
+
+.registrationForm input, .registrationForm select{
+  margin-right: 20px;
+}
+
+.registrationForm header{
+  color: #3B3738;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+#parentInfoForm, #studentBasicForm {
+  padding: 36px;
+}
+
+.crm-container {
+  /*border: 1px solid black;*/
+  min-height: calc(100vh - 80px);
+  background-color: #FDF3E7;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+/*#pInfoSave{
+  background-color:
+}*/
+
+.crm-btn-primary{
+  background-color: #C63D0F;
+  border-color: #C63D0F;
+  color: white;
+}
+
+.crm-btn-secondary{
+  background-color: #7E8F7C;
+  color: white;
+}
+
+#homeContainer{
+  width: 1180px;
+  margin: 66px auto;
+}
+
+#homeContainer main{
+  min-height: 800px;
+  background-color: #FFFEFE;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 12px 30px;
+}
+
+#homeContainer aside {
+  padding: 0;
+  height: 600px;
+  background-color: #FFFEFE;
+  border: 1px solid white;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+
+.post{
+  padding: 6px 12px;
+  border-bottom: 1px solid black;
+}
+
+#homeContainer aside>header, #homeContainer main>header{
+  background-color: #3B3738;
+  color: white;
+  height: 40px;
+  font-size: 16px;
+  padding: 7px 12px;
+}
+
+#studentSearchContainer{
+  width: 960px;
+  margin: 66px auto;
+}
+
+#searchStudentBar{
+  padding: 18px;
+  background-color: #FFFEFE;
+}
+
+#searchResults{
+  min-height: 300px;
+  background-color: #FFFEFE;
+  margin-top: 66px;
+}
+
+#searchResults > header {
+  background-color: #3B3738;
+  color: white;
+  height: 60px;
+  font-size: 18px;
+  padding: 14px 12px;
+}
+
+#searchResults > section {
+  padding: 18px;
+}
+
+.parentInformation{
+  margin-top: 46px;
+}
+
+#studentSearchConfirm{
+  margin-right: 6px;
+  color: white
+  /*background-color:*/
+}
+
+#studentSearchDecline{
+  margin-right: 6px;
+  color: white
+}
+
+/*Applications*/
+#student_apps_container, #applicationForm, #parentViewApplication, #createSurveySection, #displaySurveysSection, #pDisplaySurveySection, #pUploadSurveySection, .genericContainer{
+  background-color: #FFFEFE;
+  width: 960px;
+  margin: 66px auto;
+  min-height: 660px;
+}
+
+#preview_photo_id{
+  height: 240px;
+  border: 3px inset #3B3738;
+}
+
+#photoId{
+  height: 218px;
+  border: 3px inset #3B3738;
+}
+
+#appname {
+  font-size: 36px;
+}
+
+#applicationForm, #parentViewApplication {
+  padding: 36px;
+}
+
+#nameContainer {
+  margin-top: 18px;
+}
+
+.application-info-row{
+  padding-bottom: 6px;
+  font-size: 18px;
+}
+
+.application-info-row label{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ .app-parents-table{
+   margin-top: 6px;
+ }
+ .app-parents-table header, #uploaded_docs header{
+  color: #3B3738;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+#photoId, #birthCertificate{
+  max-width: 100%;
+}
+
+/*#applicationForm{
+  background-color: #FFFEFE;
+  width: 960px;
+  margin: 66px auto;
+  height: 660px;
+}*/
+.glyphicon-eye-open:hover{
+  cursor: pointer;
+}
+
+#parentViewApplication label{
+  font-size: 16px;
+}
+
+#createSurveySection, #displaySurveysSection, #pUploadSurveySection, #pDisplaySurveySection{
+  min-height: 240px;
+  padding: 24px;
+}
+
+#createSurveySection header, #displaySurveysSection header, #pDisplaySurveySection header, #pUploadSurveySection header{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+#displaySurveysSection, #pDisplaySurveySection{
+  min-height: 480px;
+  overflow-y: scroll;
+}
+
+.genericContainer{
+  padding: 30px;
+}
+
+.genericContainer header{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.genericContainer article{
+  margin-bottom: 18px;
+}
+
+#student_apps_container{
+    padding: 32px;
+}

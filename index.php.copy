@@ -1,0 +1,56 @@
+<?php
+  define('CSS_DIR','/schoolcrm/css');
+  define('JS_DIR', $_SERVER['DOCUMENT_ROOT'] . '/schoolcrm/js');
+
+  require('./common/header.php');
+  die();
+  /*
+    Get the path from the url and try to locate a page that corresponds to the path. Failure to locate a matching page, redirects
+    the user to a 404 page.
+  */
+  try{
+    $temp = str_replace("schoolcrm", "", $_SERVER['REQUEST_URI']);
+    $path = preg_replace("/\//", "", $temp,2);
+    // echo $temp;
+    // echo '<br />';
+    // echo file_exists("./pages/$path.php");
+    // die();
+    /*
+      Redirect to 404 page is a page matching the path does not exists.
+    */
+
+    if (!file_exists("./pages/$path.php")){
+      die('page does not exists');
+      header('Location: http://localhost/schoolcrm/404.php');
+      exit();
+    }
+
+    require("./pages/$path.php");
+  } catch (Exception $e){
+    die($e);
+  }
+
+  require('./common/footer.php');
+?>
+
+
+<?php
+
+?>
+
+<form class="form-horizontal">
+  <div class="form-inline">
+    <div class="form-group">
+      <label>First Name</label>
+      <input type="text" class="form-control" placeholder="Susan"/>
+    </div>
+    <div class="form-group">
+      <label>Middle Name</label>
+      <input type="text" class="form-control" placeholder="Princess"/>
+    </div>
+    <div class="form-group">
+      <label>Last Name</label>
+      <input type="text" class="form-control" placeholder="Bone"/>
+    </div>
+  </div>
+</form>

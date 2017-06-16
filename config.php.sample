@@ -1,0 +1,6 @@
+<?php
+  define('DATABASE_USER', 'database user name');
+  define('DATABASE_PASS', 'database user password');
+  define('DATABASE_HOST', 'localhost');
+  define('DATABASE_NAME', 'schoolcrm');
+?>
