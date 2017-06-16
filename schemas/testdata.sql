@@ -31,7 +31,7 @@ INSERT INTO studentsubject(student_id, subject_id, percentage, grade, academic_y
 INSERT INTO studentsubject(student_id, subject_id, percentage, grade, academic_year, notes) VALUES (1, 2, 75, 'A', 2017, 'Good job!');
 INSERT INTO studentsubject(student_id, subject_id, percentage, grade, academic_year, notes) VALUES (1, 3, 95, 'A', 2017, 'Excellent!');
 
-INSERT INTO survey(file_path, created, name) VALUES ('../surveys/test.txt', 1497587177, 'TestSurvey')
+INSERT INTO survey(file_path, created, name) VALUES ('../surveys/test.txt', 1497587177, 'TestSurvey');
 -- INSERT INTO student() VALUES()
 -- INSERT INTO student() VALUES()
 -- INSERT INTO student() VALUES()
